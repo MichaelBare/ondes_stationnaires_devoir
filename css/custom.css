@@ -1,0 +1,15 @@
+.twocolumn {
+  column-count: 2;
+  column-gap: 40px;
+  column-rule-style: solid;
+  column-rule-color: #f0f0f0;
+  text-align: left;
+}
+
+.customgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+

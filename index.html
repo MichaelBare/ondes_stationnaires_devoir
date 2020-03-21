@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Les ondes stationnaires</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/custom.css">
+		
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+				    <h3> Les ondes stationnaires - Applications</h3>
+				    <p> Par cette application, vous allez faire le lien entre la production de son par un instrument de musique (par exemple, une flûte) et les ondes stationnaires.</p>
+				    <p> Vous vous souvenez des tubes qui trainaient sur mon bureau la semaine passée ? Et bien, vous allez comprendre ...</p>
+				    
+				
+				</section>
+				<section>
+				    <p> En tappant brièvement sur l'extrémité d'un de ces tubes (celui de la vidéo mesure 99,5 cm), un son est émis. Sa hauteur dépendra de la longueur du tube ...</p>
+				    <video width="50%" controls>
+                        <source src="ressources/Tube PVC.mp4" type="video/mp4">
+  
+                    </video>
+
+                </section>
+			    
+			    <section>
+			    <h5> Mécanique de la formation d'un son dans un tube aux extrémités ouvertes </h5>
+				<customgrid> 
+				    
+				    <img width="15%" src="ressources/fondamentale.gif"></img>
+				    <img width="15%" src="ressources/harmonique1.gif"></img>
+				    <img width="15%" src="ressources/harmonique2.gif"></img>
+				    <img width="15%" src="ressources/total.gif"></img>
+				
+				</customgrid>
+				<p> De gauche à droite : Le mode fondamental, la première harmonique, la deuxième harmonique et l'onde totale</p>
+				</section>
+				<section>
+				    <p style="font-size:32px">Donc, le son perçu possèdera une fréquence fondamentale égale à la fréquence fondamentale de l'onde stationnaire de pression régnant dans le tube. D'ailleurs, en analysant le son, on obtient ceci :</p>
+				    <img   width="100%" src="ressources/audacity.png"></img>
+				    <p style="font-size:32px">L'extrait séletionné couvre 5301 échantilloons ( <i> 1 échantillon = 1/44100 ème de seconde</i> ).</p>
+				</section>
+				<section>
+				    <h4> Ma question est la suivante : Est-il possible de déterminer la vitesse du son avec ces observations ?</h4>
+				</section>
+				    
+				    
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				hash: true,
+				width: "100%",
+	            height: "100%",
+	            margin: 0.1,
+	            minScale: 1,
+	            maxScale: 1,
+	            
+	            math: {
+					// mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+					config: 'TeX-AMS_HTML-full',
+					TeX: {
+						Macros: {
+							R: '\\mathbb{R}',
+							set: [ '\\left\\{#1 \\; ; \\; #2\\right\\}', 2 ]
+						}
+					}
+				},
+				dependencies: [
+				    { src: 'plugin/math/math.js', async: true },
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/highlight/highlight.js' },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+			
+
+		</script>
+		
+	</body>
+</html>
